@@ -155,7 +155,8 @@ const HeroSection: React.FC = () => {
                   layout="fixed"
                   width={1200}
                   height={762}
-                  alt="Screenshot of a ListPage in Saas UI Pro"
+                  objectFit="none"
+                  alt="Screenshot of a home Ready Travel App"
                   quality="75"
                   priority
                 />
