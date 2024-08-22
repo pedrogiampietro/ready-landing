@@ -63,8 +63,8 @@ const Home: NextPage = () => {
   return (
     <Box>
       <SEO
-        title="Saas UI Landingspage"
-        description="Free SaaS landingspage starter kit"
+        title="Ready Travel App"
+        description="Seu aplicativo de viagens gratuito!"
       />
       <Box>
         <HeroSection />
