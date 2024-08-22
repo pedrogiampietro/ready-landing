@@ -1,114 +1,66 @@
-import { HStack, Text } from '@chakra-ui/react'
+import { HStack, Text } from "@chakra-ui/react";
 
 export default {
-  title: 'Pricing for every stage',
+  title: "Planos para cada tipo de viajante",
   description:
-    'Pay once and get life-time access to our high quality components.',
+    "Escolha o plano que melhor se adapta às suas necessidades e aproveite ao máximo sua experiência de viagem.",
   plans: [
     {
-      id: 'oss',
-      title: 'Open Source',
-      description: 'Basic compoents, perfect to get started.',
-      price: 'Free',
+      id: "free",
+      title: "Free",
+      description: "Ideal para começar sua jornada.",
+      price: "Grátis",
       features: [
         {
-          title: 'MIT License',
+          title: "Beleza de títulos de viagens (3x)",
         },
         {
-          title: 'Authentication (Clerk/Supabase/Magic)',
+          title: "Geração de viagem com IA (1x)",
         },
         {
-          title: 'Form (react-hook-form)',
+          title: "Acesso completo ao app",
         },
         {
-          title: 'Modals manager',
+          title: "Suporte básico",
         },
         {
-          title: 'Hotkeys',
-        },
-        {
-          title: 'Web3 components',
-        },
-        {
-          title: 'And much more...',
+          title: "Com anúncios",
         },
       ],
       action: {
-        href: '#',
+        href: "#",
       },
     },
     {
-      id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
-      price: 'Free',
+      id: "pro",
+      title: "Pro",
+      description:
+        "Para viajantes frequentes que querem mais controle e liberdade.",
+      price: "R$12,00/mês",
       isRecommended: true,
       features: [
         {
-          title: 'One project',
+          title: "Sem anúncios",
         },
         {
-          title: 'One developer',
+          title: "Geração de conteúdo ilimitado com IA",
         },
         {
-          title: 'Advanced components',
+          title: "Beleza de títulos de viagens ilimitado",
         },
         {
-          title: 'Multiple themes',
+          title: "Suporte prioritário",
         },
         {
-          title: 'Next.js and Electron boilerplates',
+          title: "Borda de avatar exclusiva",
         },
         {
-          title: 'Private discord community',
-        },
-        {
-          title: '1 year of updates',
-        },
-        null,
-        {
-          title: 'Private beta access',
-          iconColor: 'green.500',
+          title: "Título de usuário PRO",
         },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Single%20license',
-      },
-    },
-    {
-      id: 'startup',
-      title: 'Startup',
-      description: 'Unlimited license for growing teams.',
-      price: (
-        <HStack>
-          <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
-          </Text>
-          <Text>€499,-</Text>
-        </HStack>
-      ),
-      features: [
-        {
-          title: 'Unlimited projects',
-        },
-        {
-          title: 'Unlimited developers',
-        },
-        {
-          title: '1 year of updates',
-        },
-        {
-          title: 'Everything from Bootstrap',
-        },
-        null,
-        {
-          title: 'Private beta access',
-          iconColor: 'green.500',
-        },
-      ],
-      action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Unlimited%20license',
+        href: "#",
       },
     },
   ],
-}
+};

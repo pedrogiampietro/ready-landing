@@ -1,42 +1,43 @@
 export default {
-  title: 'Loved by tech people',
+  title: "Adorado por viajantes",
   items: [
     {
-      name: 'Eelco Wiersma',
-      description: 'Founder Saas UI',
+      name: "Renata Alink",
+      description: "Viajante Experiente",
       avatar:
-        'https://pbs.twimg.com/profile_images/1470742164024008706/k-eXHtu0_normal.jpg',
+        "https://pbs.twimg.com/profile_images/1470742164024008706/k-eXHtu0_normal.jpg",
       children: (
         <>
-          “With SaaS UI I am able to produce high quality dashboard apps and
-          internal tools without a lot of design skills. The ROI really is
-          amazing.”
+          “Com este aplicativo de viagens, consigo planejar viagens incríveis
+          sem esforço. A função de criação de itinerários com AI é realmente
+          fantástica, economiza muito tempo e me permite focar em aproveitar a
+          viagem.”
         </>
       ),
     },
     {
-      name: 'Caroline Yahaya',
-      description: 'Fullstack Developer',
-      avatar: '/static/images/avatar2.jpg',
+      name: "Lucas Pereira",
+      description: "Aventureiro e Fotógrafo",
+      avatar: "/static/images/avatar2.jpg",
       children: (
         <>
-          “Saas UI allows me to build beautiful and functional UI super fast.
-          The components are very well thought out and the Next.js starter kit
-          saved me at least 100 hours of work.”
+          “Este app me ajuda a organizar todos os detalhes das minhas viagens de
+          forma simples e rápida. Adoro a capacidade de explorar novos destinos
+          e compartilhar minhas experiências com outros viajantes.”
         </>
       ),
     },
     {
-      name: 'Alberto Vazquez',
-      description: 'Frontend Engineer',
-      avatar: '/static/images/avatar3.jpg',
+      name: "Carla Mendes",
+      description: "Exploradora Cultural",
+      avatar: "/static/images/avatar3.jpg",
       children: (
         <>
-          “Saas UI gave us a perfect starting point for our project, having the
-          storybooks already set up with beautifully crafted components and
-          fully mocked pages was a treat.”
+          “O aplicativo oferece um ponto de partida perfeito para qualquer
+          viagem. As recomendações de restaurantes e atividades são sempre
+          precisas, e o suporte ao viajante é excepcional!”
         </>
       ),
     },
   ],
-}
+};

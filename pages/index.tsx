@@ -24,13 +24,11 @@ import { FallInPlace } from "components/motion/fall-in-place";
 import { Hero } from "components/hero";
 import { Link, Br } from "@saas-ui/react";
 import { Em } from "components/typography";
-import { NextjsLogo, ChakraLogo } from "components/logos";
+import { GeminiLogo, ReactLogo } from "components/logos";
 import {
   FiArrowRight,
   FiBox,
-  FiCheck,
   FiCode,
-  FiCopy,
   FiFlag,
   FiGrid,
   FiLock,
@@ -97,30 +95,31 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
+                Explore o Mundo com Estilo
+                <Br /> Planeje Viagens Inesquecíveis com Facilidade
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{" "}
-                build intuitive SaaS products with speed.
+                ReadyApp <Em>é a sua plataforma de viagens intuitiva</Em>
+                <Br /> que oferece todas as ferramentas necessárias para
+                planejar e vivenciar aventuras incríveis, <Br /> tudo em um só
+                lugar.
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
               <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
+                <ReactLogo height="28px" /> <GeminiLogo height="20px" />
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
+                {/* <ButtonLink colorScheme="primary" size="lg" href="/signup">
                   Sign Up
-                </ButtonLink>
+                </ButtonLink> */}
                 <ButtonLink
                   size="lg"
-                  href="https://demo.saas-ui.dev"
+                  href="#"
                   variant="outline"
                   rightIcon={
                     <Icon
@@ -174,33 +173,34 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: "Accessible",
+            title: "Acessível",
             icon: FiSmile,
-            description: "All components strictly follow WAI-ARIA standards.",
+            description:
+              "Todas as funcionalidades foram projetadas para serem intuitivas e fáceis de usar.",
             iconPosition: "left",
             delay: 0.6,
           },
           {
-            title: "Themable",
+            title: "Personalizável",
             icon: FiSliders,
             description:
-              "Fully customize all components to your brand with theme support and style props.",
+              "Customize totalmente sua experiência de viagem, ajustando preferências e estilos de acordo com sua marca ou gosto pessoal.",
             iconPosition: "left",
             delay: 0.8,
           },
           {
-            title: "Composable",
+            title: "Modular",
             icon: FiGrid,
             description:
-              "Compose components to fit your needs and mix them together to create new ones.",
+              "Combine diferentes funcionalidades para planejar sua viagem do jeito que você precisa, criando uma experiência única.",
             iconPosition: "left",
             delay: 1,
           },
           {
-            title: "Productive",
+            title: "Produtivo",
             icon: FiThumbsUp,
             description:
-              "Designed to reduce boilerplate and fully typed, build your product at speed.",
+              "Desenvolvido para facilitar o planejamento de viagens, permitindo que você organize tudo rapidamente e sem complicações.",
             iconPosition: "left",
             delay: 1.1,
           },
@@ -212,94 +212,59 @@ const HeroSection: React.FC = () => {
 };
 
 const HighlightsSection = () => {
-  const { value, onCopy, hasCopied } = useClipboard("yarn add @saas-ui/react");
-
   return (
     <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+      <HighlightsItem
+        colSpan={[1, null, 2]}
+        title="Planejamento Inteligente de Viagens"
+      >
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
+            Planeje suas viagens de forma inteligente com a ajuda da nossa{" "}
+            <Em>AI integrada</Em>. Crie itinerários personalizados, encontre os
+            melhores restaurantes e descubra novas aventuras em poucos minutos.
           </Text>
-
-          <Flex
-            rounded="full"
-            borderWidth="1px"
-            flexDirection="row"
-            alignItems="center"
-            py="1"
-            ps="8"
-            pe="2"
-            bg="primary.900"
-            _dark={{ bg: "gray.900" }}
-          >
-            <Box>
-              <Text color="yellow.400" display="inline">
-                yarn add
-              </Text>{" "}
-              <Text color="cyan.300" display="inline">
-                @saas-ui/react
-              </Text>
-            </Box>
-            <IconButton
-              icon={hasCopied ? <FiCheck /> : <FiCopy />}
-              aria-label="Copy install command"
-              onClick={onCopy}
-              variant="ghost"
-              ms="4"
-              isRound
-              color="white"
-            />
-          </Flex>
         </VStack>
       </HighlightsItem>
-      <HighlightsItem title="Solid foundations">
+
+      <HighlightsItem title="Interação Social">
         <Text color="muted" fontSize="lg">
-          We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most productive and established tools in the scene and
-          build Saas UI on top of it.
+          Conecte-se com outros viajantes! Veja as viagens de outras pessoas,
+          deixe comentários, curta suas aventuras favoritas e compartilhe suas
+          próprias experiências com a comunidade.
         </Text>
       </HighlightsItem>
+
       <HighlightsTestimonialItem
         name="Renata Alink"
-        description="Founder"
+        description="Viajante Experiente"
         avatar="/static/images/avatar.jpg"
         gradient={["pink.200", "purple.500"]}
       >
-        “Saas UI helped us set up a beautiful modern UI in no time. It saved us
-        hundreds of hours in development time and allowed us to focus on
-        business logic for our specific use-case from the start.”
+        “Este aplicativo transformou a forma como planejo minhas viagens. A
+        geração de itinerários com AI é incrível, e adoro poder explorar viagens
+        de outros usuários e compartilhar as minhas próprias.”
       </HighlightsTestimonialItem>
+
       <HighlightsItem
         colSpan={[1, null, 2]}
-        title="Start your next idea two steps ahead"
+        title="Tudo o que Você Precisa para Viajar"
       >
         <Text color="muted" fontSize="lg">
-          We took care of all your basic frontend needs, so you can start
-          building functionality that makes your product unique.
+          Nosso aplicativo cobre todas as suas necessidades de viagem. Desde a
+          criação de roteiros detalhados até a escolha dos melhores
+          restaurantes, você tem tudo à sua disposição para uma viagem
+          inesquecível.
         </Text>
         <Wrap mt="8">
           {[
-            "authentication",
-            "navigation",
-            "crud",
-            "settings",
-            "multi-tenancy",
-            "layouts",
-            "billing",
-            "a11y testing",
-            "server-side rendering",
-            "documentation",
-            "onboarding",
-            "storybooks",
-            "theming",
-            "upselling",
-            "unit testing",
-            "feature flags",
-            "responsiveness",
+            "geração de viagens com AI",
+            "itinerários personalizados",
+            "exploração de restaurantes",
+            "interação social",
+            "comentários e curtidas",
+            "compartilhamento de viagens",
+            "descoberta de novas aventuras",
           ].map((value) => (
             <Tag
               key={value}
@@ -328,16 +293,17 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your standard
-          <Br /> dashboard template.
+          Seu companheiro de viagem
+          <Br /> completo e inteligente.
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
+          Nosso aplicativo oferece tudo o que você precisa para planejar e viver
+          suas viagens de forma única e inesquecível.
           <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+          Personalize suas aventuras, conecte-se com outros viajantes e
+          aproveite ao máximo cada destino.
         </>
       }
       align="left"
@@ -345,69 +311,69 @@ const FeaturesSection = () => {
       iconSize={4}
       features={[
         {
-          title: "Components.",
+          title: "Criação de Viagens com AI.",
           icon: FiBox,
           description:
-            "All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.",
+            "Gere itinerários personalizados e descubra os melhores destinos com a ajuda da nossa inteligência artificial integrada.",
           variant: "inline",
         },
         {
-          title: "Starterkits.",
+          title: "Planejamento Detalhado.",
           icon: FiLock,
           description:
-            "Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.",
+            "Organize sua viagem em detalhes, incluindo reservas de restaurantes, atividades diárias e muito mais, tudo em um só lugar.",
           variant: "inline",
         },
         {
-          title: "Documentation.",
+          title: "Exploração Social.",
           icon: FiSearch,
           description:
-            "Extensively documented, including storybooks, best practices, use-cases and examples.",
+            "Descubra viagens de outros usuários, veja recomendações, deixe comentários e curta as melhores aventuras.",
           variant: "inline",
         },
         {
-          title: "Onboarding.",
+          title: "Compartilhamento de Experiências.",
           icon: FiUserPlus,
           description:
-            "Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.",
+            "Compartilhe suas viagens com a comunidade, adicione fotos, dicas e inspire outros viajantes.",
           variant: "inline",
         },
         {
-          title: "Feature flags.",
+          title: "Notificações Inteligentes.",
           icon: FiFlag,
           description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
+            "Receba notificações sobre suas viagens, lembretes de atividades e sugestões personalizadas para aproveitar cada momento.",
           variant: "inline",
         },
         {
-          title: "Upselling.",
+          title: "Interatividade Simples.",
           icon: FiTrendingUp,
           description:
-            "Components and hooks for upgrade flows designed to make upgrading inside your app frictionless.",
+            "Navegue de forma intuitiva e interaja com o conteúdo de maneira fluida, facilitando o uso do aplicativo em qualquer situação.",
           variant: "inline",
         },
         {
-          title: "Themes.",
+          title: "Temas Personalizáveis.",
           icon: FiToggleLeft,
           description:
-            "Includes multiple themes with darkmode support, always have the perfect starting point for your next project.",
+            "Personalize a aparência do aplicativo com temas variados, incluindo suporte a modo escuro, para tornar sua experiência ainda mais agradável.",
           variant: "inline",
         },
         {
-          title: "Generators.",
+          title: "Suporte ao Viajante.",
           icon: FiTerminal,
           description:
-            "Extend your design system while maintaininig code quality and consistency with built-in generators.",
+            "Tenha à disposição guias, dicas e suporte para qualquer dúvida que surgir durante a sua viagem.",
           variant: "inline",
         },
         {
-          title: "Monorepo.",
+          title: "Integração Completa.",
           icon: FiCode,
           description: (
             <>
-              All code is available as packages in a high-performance{" "}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
+              O aplicativo se integra perfeitamente com outras ferramentas e
+              serviços, garantindo que todas as suas necessidades de viagem
+              sejam atendidas em um único lugar.
             </>
           ),
           variant: "inline",
@@ -452,7 +418,7 @@ const PricingSection = () => {
   return (
     <Pricing {...pricing}>
       <Text p="8" textAlign="center" color="muted">
-        VAT may be applicable depending on your location.
+        O IVA pode ser aplicado dependendo da sua localização.
       </Text>
     </Pricing>
   );
@@ -470,8 +436,8 @@ export async function getStaticProps() {
       announcement: {
         title: "Support us by becoming a stargazer! 🚀 ",
         description:
-          '<img src="https://img.shields.io/github/stars/saas-js/saas-ui.svg?style=social&label=Star" />',
-        href: "https://github.com/saas-js/saas-ui",
+          '<img src="https://img.shields.io/github/stars/ready-app?style=social&label=Star" />',
+        href: "https://github.com/pedrogiampietro/ready-app",
         action: false,
       },
     },
